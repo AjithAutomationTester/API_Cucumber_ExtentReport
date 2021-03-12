@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>API SBN</td>
+      <td>05 Jan 2021, 18:32</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+      <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+  </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td class="location">stepDefinition.Step.account_is_created_and_I_am_printing_the_details_of_the_account()</td>
+              <td>1</td>
+              <td class="duration" data-value="119000000">0.119</td>
+              <td class="duration" data-value="119000000">0.119</td>
+              <td class="duration" data-value="119000000">0.119</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinition.Step.i_am_creating_a_new_account()</td>
+              <td>1</td>
+              <td class="duration" data-value="1177000000">1.177</td>
+              <td class="duration" data-value="1177000000">1.177</td>
+              <td class="duration" data-value="1177000000">1.177</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinition.Step.i_am_getting_the_username_and_password()</td>
+              <td>1</td>
+              <td class="duration" data-value="534000000">0.534</td>
+              <td class="duration" data-value="534000000">0.534</td>
+              <td class="duration" data-value="534000000">0.534</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinition.Step.i_am_printing_the_response()</td>
+              <td>1</td>
+              <td class="duration" data-value="1493000000">1.493</td>
+              <td class="duration" data-value="1493000000">1.493</td>
+              <td class="duration" data-value="1493000000">1.493</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinition.Step.i_am_printing_the_token()</td>
+              <td>1</td>
+              <td class="duration" data-value="28000000">0.028</td>
+              <td class="duration" data-value="28000000">0.028</td>
+              <td class="duration" data-value="28000000">0.028</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinition.Step.i_can_get_the_post_which_is_liked()</td>
+              <td>1</td>
+              <td class="duration" data-value="1500000000">1.500</td>
+              <td class="duration" data-value="1500000000">1.500</td>
+              <td class="duration" data-value="1500000000">1.500</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinition.Step.i_comment_in_the_post()</td>
+              <td>1</td>
+              <td class="duration" data-value="143000000">0.143</td>
+              <td class="duration" data-value="143000000">0.143</td>
+              <td class="duration" data-value="143000000">0.143</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinition.Step.i_create_a_body_and_post_in_the_uri()</td>
+              <td>1</td>
+              <td class="duration" data-value="571000000">0.571</td>
+              <td class="duration" data-value="571000000">0.571</td>
+              <td class="duration" data-value="571000000">0.571</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinition.Step.i_get_the_post_ID_from_the_body()</td>
+              <td>1</td>
+              <td class="duration" data-value="57000000">0.057</td>
+              <td class="duration" data-value="57000000">0.057</td>
+              <td class="duration" data-value="57000000">0.057</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinition.Step.i_give_the_token()</td>
+              <td>1</td>
+              <td class="duration" data-value="68000000">0.068</td>
+              <td class="duration" data-value="68000000">0.068</td>
+              <td class="duration" data-value="68000000">0.068</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinition.Step.i_give_the_token_and_postID()</td>
+              <td>1</td>
+              <td class="duration" data-value="119000000">0.119</td>
+              <td class="duration" data-value="119000000">0.119</td>
+              <td class="duration" data-value="119000000">0.119</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinition.Step.i_have_a_new_account_and_load_the_base_URI()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinition.Step.i_have_a_new_post()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinition.Step.i_have_a_post_to_comment()</td>
+              <td>1</td>
+              <td class="duration" data-value="2000000">0.002</td>
+              <td class="duration" data-value="2000000">0.002</td>
+              <td class="duration" data-value="2000000">0.002</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinition.Step.i_have_a_post_with_the_comment()</td>
+              <td>1</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinition.Step.i_have_added_a_new_post_to_the_account()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinition.Step.i_have_created_an_account1()</td>
+              <td>1</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinition.Step.i_have_created_an_account_and_load_the_base_URI()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinition.Step.i_have_created_an_account_scenario2()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinition.Step.i_have_created_an_account_scenario3()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinition.Step.i_have_created_userID_and_code_and_load_the_base_URI()</td>
+              <td>1</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinition.Step.i_have_liked_a_post()</td>
+              <td>1</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinition.Step.i_have_the_token_and_userID_to_view_the_profile_and_load_the_base_URI()</td>
+              <td>1</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinition.Step.i_like_the_post()</td>
+              <td>1</td>
+              <td class="duration" data-value="90000000">0.090</td>
+              <td class="duration" data-value="90000000">0.090</td>
+              <td class="duration" data-value="90000000">0.090</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinition.Step.i_load_the_code_and_post_in_the_URI_oauth_code()</td>
+              <td>1</td>
+              <td class="duration" data-value="159000000">0.159</td>
+              <td class="duration" data-value="159000000">0.159</td>
+              <td class="duration" data-value="159000000">0.159</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinition.Step.i_login_with_invalid_username_and_invalid_password_scenario3()</td>
+              <td>1</td>
+              <td class="duration" data-value="100000000">0.100</td>
+              <td class="duration" data-value="100000000">0.100</td>
+              <td class="duration" data-value="100000000">0.100</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinition.Step.i_login_with_invalid_username_and_valid_password_scenario2()</td>
+              <td>1</td>
+              <td class="duration" data-value="90000000">0.090</td>
+              <td class="duration" data-value="90000000">0.090</td>
+              <td class="duration" data-value="90000000">0.090</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinition.Step.i_login_with_username_and_password()</td>
+              <td>1</td>
+              <td class="duration" data-value="93000000">0.093</td>
+              <td class="duration" data-value="93000000">0.093</td>
+              <td class="duration" data-value="93000000">0.093</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinition.Step.i_login_with_username_and_wrong_password()</td>
+              <td>1</td>
+              <td class="duration" data-value="128000000">0.128</td>
+              <td class="duration" data-value="128000000">0.128</td>
+              <td class="duration" data-value="128000000">0.128</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinition.Step.i_post_login_details_in_the_URI1()</td>
+              <td>1</td>
+              <td class="duration" data-value="1692000000">1.692</td>
+              <td class="duration" data-value="1692000000">1.692</td>
+              <td class="duration" data-value="1692000000">1.692</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinition.Step.i_post_login_details_in_the_URI_scenario2()</td>
+              <td>1</td>
+              <td class="duration" data-value="1724000000">1.724</td>
+              <td class="duration" data-value="1724000000">1.724</td>
+              <td class="duration" data-value="1724000000">1.724</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinition.Step.i_post_login_details_in_the_URI_scenario3()</td>
+              <td>1</td>
+              <td class="duration" data-value="1647000000">1.647</td>
+              <td class="duration" data-value="1647000000">1.647</td>
+              <td class="duration" data-value="1647000000">1.647</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinition.Step.i_post_login_details_in_the_uri_oauthcode()</td>
+              <td>1</td>
+              <td class="duration" data-value="1726000000">1.726</td>
+              <td class="duration" data-value="1726000000">1.726</td>
+              <td class="duration" data-value="1726000000">1.726</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinition.Step.i_post_the_body_in_the_URI()</td>
+              <td>1</td>
+              <td class="duration" data-value="1555000000">1.555</td>
+              <td class="duration" data-value="1555000000">1.555</td>
+              <td class="duration" data-value="1555000000">1.555</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinition.Step.i_post_the_body_in_the_URI_scenario2()</td>
+              <td>1</td>
+              <td class="duration" data-value="1538000000">1.538</td>
+              <td class="duration" data-value="1538000000">1.538</td>
+              <td class="duration" data-value="1538000000">1.538</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinition.Step.i_post_the_body_in_the_URI_scenario3()</td>
+              <td>1</td>
+              <td class="duration" data-value="1485000000">1.485</td>
+              <td class="duration" data-value="1485000000">1.485</td>
+              <td class="duration" data-value="1485000000">1.485</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinition.Step.i_post_the_body_in_the_URI_scenario4()</td>
+              <td>1</td>
+              <td class="duration" data-value="1521000000">1.521</td>
+              <td class="duration" data-value="1521000000">1.521</td>
+              <td class="duration" data-value="1521000000">1.521</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinition.Step.i_post_the_postid_and_userid_in_the_uri()</td>
+              <td>1</td>
+              <td class="duration" data-value="87000000">0.087</td>
+              <td class="duration" data-value="87000000">0.087</td>
+              <td class="duration" data-value="87000000">0.087</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinition.Step.i_post_the_token_and_userid_in_the_uri()</td>
+              <td>1</td>
+              <td class="duration" data-value="42000000">0.042</td>
+              <td class="duration" data-value="42000000">0.042</td>
+              <td class="duration" data-value="42000000">0.042</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinition.Step.i_print_the_code()</td>
+              <td>1</td>
+              <td class="duration" data-value="65000000">0.065</td>
+              <td class="duration" data-value="65000000">0.065</td>
+              <td class="duration" data-value="65000000">0.065</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinition.Step.i_should_able_to_generate_token()</td>
+              <td>1</td>
+              <td class="duration" data-value="1545000000">1.545</td>
+              <td class="duration" data-value="1545000000">1.545</td>
+              <td class="duration" data-value="1545000000">1.545</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinition.Step.i_should_able_to_login()</td>
+              <td>1</td>
+              <td class="duration" data-value="2000000">0.002</td>
+              <td class="duration" data-value="2000000">0.002</td>
+              <td class="duration" data-value="2000000">0.002</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinition.Step.i_should_able_to_view_the_profile()</td>
+              <td>1</td>
+              <td class="duration" data-value="1533000000">1.533</td>
+              <td class="duration" data-value="1533000000">1.533</td>
+              <td class="duration" data-value="1533000000">1.533</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinition.Step.i_should_get_error_message()</td>
+              <td>1</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinition.Step.i_should_get_error_message_as_Invalid_Credentials()</td>
+              <td>1</td>
+              <td class="duration" data-value="46000000">0.046</td>
+              <td class="duration" data-value="46000000">0.046</td>
+              <td class="duration" data-value="46000000">0.046</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinition.Step.i_should_get_error_message_as_Invalid_Credentials_scenario2()</td>
+              <td>1</td>
+              <td class="duration" data-value="69000000">0.069</td>
+              <td class="duration" data-value="69000000">0.069</td>
+              <td class="duration" data-value="69000000">0.069</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinition.Step.i_should_get_error_message_as_Invalid_Credentials_scenario3()</td>
+              <td>1</td>
+              <td class="duration" data-value="150000000">0.150</td>
+              <td class="duration" data-value="150000000">0.150</td>
+              <td class="duration" data-value="150000000">0.150</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinition.Step.i_should_get_error_message_scenario2()</td>
+              <td>1</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinition.Step.i_should_get_error_message_scenario3()</td>
+              <td>1</td>
+              <td class="duration" data-value="2000000">0.002</td>
+              <td class="duration" data-value="2000000">0.002</td>
+              <td class="duration" data-value="2000000">0.002</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinition.Step.i_should_get_error_message_scenario4()</td>
+              <td>1</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinition.Step.i_should_get_status_code_as(java.lang.Integer)</td>
+              <td>1</td>
+              <td class="duration" data-value="1703000000">1.703</td>
+              <td class="duration" data-value="1703000000">1.703</td>
+              <td class="duration" data-value="1703000000">1.703</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinition.Step.i_should_get_statuscode_as(java.lang.Integer)</td>
+              <td>1</td>
+              <td class="duration" data-value="1476000000">1.476</td>
+              <td class="duration" data-value="1476000000">1.476</td>
+              <td class="duration" data-value="1476000000">1.476</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinition.Step.i_should_get_the_comment_from_the_post()</td>
+              <td>1</td>
+              <td class="duration" data-value="1423000000">1.423</td>
+              <td class="duration" data-value="1423000000">1.423</td>
+              <td class="duration" data-value="1423000000">1.423</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinition.Step.i_should_get_the_corresponding_post_information()</td>
+              <td>1</td>
+              <td class="duration" data-value="1821000000">1.821</td>
+              <td class="duration" data-value="1821000000">1.821</td>
+              <td class="duration" data-value="1821000000">1.821</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinition.Step.i_try_to_create_an_account_with_existing_details()</td>
+              <td>1</td>
+              <td class="duration" data-value="495000000">0.495</td>
+              <td class="duration" data-value="495000000">0.495</td>
+              <td class="duration" data-value="495000000">0.495</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinition.Step.i_try_to_create_an_account_with_existing_emailid()</td>
+              <td>1</td>
+              <td class="duration" data-value="612000000">0.612</td>
+              <td class="duration" data-value="612000000">0.612</td>
+              <td class="duration" data-value="612000000">0.612</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinition.Step.i_try_to_create_an_account_with_existing_phone_number()</td>
+              <td>1</td>
+              <td class="duration" data-value="598000000">0.598</td>
+              <td class="duration" data-value="598000000">0.598</td>
+              <td class="duration" data-value="598000000">0.598</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinition.Step.i_try_to_create_an_account_with_existing_username()</td>
+              <td>1</td>
+              <td class="duration" data-value="443000000">0.443</td>
+              <td class="duration" data-value="443000000">0.443</td>
+              <td class="duration" data-value="443000000">0.443</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinition.Step.im_in_SBN_app_using_the_baseURI()</td>
+              <td>1</td>
+              <td class="duration" data-value="1308000000">1.308</td>
+              <td class="duration" data-value="1308000000">1.308</td>
+              <td class="duration" data-value="1308000000">1.308</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinition.Step.im_in_the_SBN_app_using_the_baseURI()</td>
+              <td>1</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinition.Step.im_in_the_SBN_app_using_the_baseURI_scenario2()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinition.Step.im_in_the_SBN_app_using_the_baseURI_scenario3()</td>
+              <td>1</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinition.Step.im_in_the_SBN_app_using_the_baseURI_scenario4()</td>
+              <td>1</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinition.Step.im_posting_the_body_in_the_URI()</td>
+              <td>1</td>
+              <td class="duration" data-value="3725000000">3.725</td>
+              <td class="duration" data-value="3725000000">3.725</td>
+              <td class="duration" data-value="3725000000">3.725</td>
+              <td class="passed">100.00%</td>
+            </tr>
+        </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>64</td>
+            <td>64</td>
+            <td class="duration">0.570</td>
+            <td class="duration">3.725</td>
+            <td class="duration">36.515</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

@@ -1,0 +1,1058 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-01-05T13:02:12.357Z",
+        "line": 7,
+        "name": "I am creating an account in SBN application",
+        "description": "",
+        "id": "i-am-creating-an-account-in-sbn-application;i-am-creating-an-account-in-sbn-application",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1308000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Im in SBN app using the baseURI",
+            "match": {
+              "location": "stepDefinition.Step.im_in_SBN_app_using_the_baseURI()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1177000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I am creating a new account",
+            "match": {
+              "location": "stepDefinition.Step.i_am_creating_a_new_account()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3725000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Im posting the body in the URI",
+            "match": {
+              "location": "stepDefinition.Step.im_posting_the_body_in_the_URI()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 119000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "account is created and I am printing the details of the account",
+            "match": {
+              "location": "stepDefinition.Step.account_is_created_and_I_am_printing_the_details_of_the_account()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 534000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I am getting the username and password",
+            "match": {
+              "location": "stepDefinition.Step.i_am_getting_the_username_and_password()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AccountCreation"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-05T13:02:19.320Z",
+        "line": 15,
+        "name": "I am logging-In using the username and password",
+        "description": "",
+        "id": "i-am-creating-an-account-in-sbn-application;i-am-logging-in-using-the-username-and-password",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I have created an account and load the base URI",
+            "match": {
+              "location": "stepDefinition.Step.i_have_created_an_account_and_load_the_base_URI()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 93000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I login with username and password",
+            "match": {
+              "location": "stepDefinition.Step.i_login_with_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1726000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I post login details in the URI /oauth/code",
+            "match": {
+              "location": "stepDefinition.Step.i_post_login_details_in_the_uri_oauthcode()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I should able to login",
+            "match": {
+              "location": "stepDefinition.Step.i_should_able_to_login()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 65000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I print the code",
+            "match": {
+              "location": "stepDefinition.Step.i_print_the_code()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-05T13:02:21.212Z",
+        "line": 23,
+        "name": "Im generating token for the corresponding account",
+        "description": "",
+        "id": "i-am-creating-an-account-in-sbn-application;im-generating-token-for-the-corresponding-account",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I have created userID and code and load the base URI",
+            "match": {
+              "location": "stepDefinition.Step.i_have_created_userID_and_code_and_load_the_base_URI()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 159000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I load the code and post in the URI /oauth/code",
+            "match": {
+              "location": "stepDefinition.Step.i_load_the_code_and_post_in_the_URI_oauth_code()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1545000000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I should able to generate token",
+            "match": {
+              "location": "stepDefinition.Step.i_should_able_to_generate_token()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 28000000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I am printing the token",
+            "match": {
+              "location": "stepDefinition.Step.i_am_printing_the_token()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TokenGenerate"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-05T13:02:22.951Z",
+        "line": 30,
+        "name": "I am viewing the profile which I created",
+        "description": "",
+        "id": "i-am-creating-an-account-in-sbn-application;i-am-viewing-the-profile-which-i-created",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I have the token and userID to view the profile and load the base URI",
+            "match": {
+              "location": "stepDefinition.Step.i_have_the_token_and_userID_to_view_the_profile_and_load_the_base_URI()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 42000000,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I post the token and userid in the URI",
+            "match": {
+              "location": "stepDefinition.Step.i_post_the_token_and_userid_in_the_uri()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1533000000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I should able to view the profile",
+            "match": {
+              "location": "stepDefinition.Step.i_should_able_to_view_the_profile()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ViewProfile"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-05T13:02:24.548Z",
+        "line": 36,
+        "name": "I am creating a new post in the account",
+        "description": "",
+        "id": "i-am-creating-an-account-in-sbn-application;i-am-creating-a-new-post-in-the-account",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "I have a new account and load the base URI",
+            "match": {
+              "location": "stepDefinition.Step.i_have_a_new_account_and_load_the_base_URI()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 571000000,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "I create a body and post in the URI",
+            "match": {
+              "location": "stepDefinition.Step.i_create_a_body_and_post_in_the_uri()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1493000000,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "I am printing the response",
+            "match": {
+              "location": "stepDefinition.Step.i_am_printing_the_response()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 57000000,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "I get the post-ID from the body",
+            "match": {
+              "location": "stepDefinition.Step.i_get_the_post_ID_from_the_body()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@NewPost"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-05T13:02:26.683Z",
+        "line": 43,
+        "name": "I am viewing the post which I added",
+        "description": "",
+        "id": "i-am-creating-an-account-in-sbn-application;i-am-viewing-the-post-which-i-added",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "I have added a new post to the account",
+            "match": {
+              "location": "stepDefinition.Step.i_have_added_a_new_post_to_the_account()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 87000000,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "I post the Post-ID and user-ID in the URI",
+            "match": {
+              "location": "stepDefinition.Step.i_post_the_postid_and_userid_in_the_uri()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1821000000,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "I should get the corresponding post information",
+            "match": {
+              "location": "stepDefinition.Step.i_should_get_the_corresponding_post_information()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ViewPost"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-05T13:02:28.623Z",
+        "line": 49,
+        "name": "I am liking the post",
+        "description": "",
+        "id": "i-am-creating-an-account-in-sbn-application;i-am-liking-the-post",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "I have a new post",
+            "match": {
+              "location": "stepDefinition.Step.i_have_a_new_post()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 90000000,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "I like the post",
+            "match": {
+              "location": "stepDefinition.Step.i_like_the_post()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1703000000,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "I should get status code as 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 28
+                }
+              ],
+              "location": "stepDefinition.Step.i_should_get_status_code_as(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LikeandUnlike"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-05T13:02:30.436Z",
+        "line": 55,
+        "name": "I am getting the post I gave like",
+        "description": "",
+        "id": "i-am-creating-an-account-in-sbn-application;i-am-getting-the-post-i-gave-like",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "I have liked a post",
+            "match": {
+              "location": "stepDefinition.Step.i_have_liked_a_post()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 119000000,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "I give the token and postID",
+            "match": {
+              "location": "stepDefinition.Step.i_give_the_token_and_postID()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1500000000,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "I can get the post which is liked",
+            "match": {
+              "location": "stepDefinition.Step.i_can_get_the_post_which_is_liked()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ViewTheLikedPost"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-05T13:02:32.069Z",
+        "line": 61,
+        "name": "I am posting a comment in the post",
+        "description": "",
+        "id": "i-am-creating-an-account-in-sbn-application;i-am-posting-a-comment-in-the-post",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "I have a post to comment",
+            "match": {
+              "location": "stepDefinition.Step.i_have_a_post_to_comment()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 143000000,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "I comment in the post",
+            "match": {
+              "location": "stepDefinition.Step.i_comment_in_the_post()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1476000000,
+              "status": "passed"
+            },
+            "line": 64,
+            "name": "I get status code as 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 21
+                }
+              ],
+              "location": "stepDefinition.Step.i_should_get_statuscode_as(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@PostComment"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-05T13:02:33.700Z",
+        "line": 67,
+        "name": "I getting the post with comments",
+        "description": "",
+        "id": "i-am-creating-an-account-in-sbn-application;i-getting-the-post-with-comments",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "I have a post with the comment",
+            "match": {
+              "location": "stepDefinition.Step.i_have_a_post_with_the_comment()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 68000000,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "I give the token",
+            "match": {
+              "location": "stepDefinition.Step.i_give_the_token()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1423000000,
+              "status": "passed"
+            },
+            "line": 70,
+            "name": "I should get the comment from the post",
+            "match": {
+              "location": "stepDefinition.Step.i_should_get_the_comment_from_the_post()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@GetComment"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-05T13:02:35.217Z",
+        "line": 73,
+        "name": "I am creating an account in SBN application with negative scenario",
+        "description": "",
+        "id": "i-am-creating-an-account-in-sbn-application;i-am-creating-an-account-in-sbn-application-with-negative-scenario",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 74,
+            "name": "Im in the SBN app using the baseURI",
+            "match": {
+              "location": "stepDefinition.Step.im_in_the_SBN_app_using_the_baseURI()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 495000000,
+              "status": "passed"
+            },
+            "line": 75,
+            "name": "I try to create an account with existing details",
+            "match": {
+              "location": "stepDefinition.Step.i_try_to_create_an_account_with_existing_details()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1555000000,
+              "status": "passed"
+            },
+            "line": 76,
+            "name": "I post the body in the URI",
+            "match": {
+              "location": "stepDefinition.Step.i_post_the_body_in_the_URI()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 77,
+            "name": "I should get error message",
+            "match": {
+              "location": "stepDefinition.Step.i_should_get_error_message()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AccountCreationNegativeScenario"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-05T13:02:37.273Z",
+        "line": 80,
+        "name": "I am creating an account in SBN application with negative scenario2",
+        "description": "",
+        "id": "i-am-creating-an-account-in-sbn-application;i-am-creating-an-account-in-sbn-application-with-negative-scenario2",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 81,
+            "name": "Im in the SBN app using the baseURI scenario2",
+            "match": {
+              "location": "stepDefinition.Step.im_in_the_SBN_app_using_the_baseURI_scenario2()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 443000000,
+              "status": "passed"
+            },
+            "line": 82,
+            "name": "I try to create an account with existing username",
+            "match": {
+              "location": "stepDefinition.Step.i_try_to_create_an_account_with_existing_username()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1538000000,
+              "status": "passed"
+            },
+            "line": 83,
+            "name": "I post the body in the URI scenario2",
+            "match": {
+              "location": "stepDefinition.Step.i_post_the_body_in_the_URI_scenario2()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 84,
+            "name": "I should get error message scenario2",
+            "match": {
+              "location": "stepDefinition.Step.i_should_get_error_message_scenario2()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AccountCreationNegativeScenario2"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-05T13:02:39.271Z",
+        "line": 87,
+        "name": "I am creating an account in SBN application with negative scenario3",
+        "description": "",
+        "id": "i-am-creating-an-account-in-sbn-application;i-am-creating-an-account-in-sbn-application-with-negative-scenario3",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 88,
+            "name": "Im in the SBN app using the baseURI scenario3",
+            "match": {
+              "location": "stepDefinition.Step.im_in_the_SBN_app_using_the_baseURI_scenario3()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 612000000,
+              "status": "passed"
+            },
+            "line": 89,
+            "name": "I try to create an account with existing emailid",
+            "match": {
+              "location": "stepDefinition.Step.i_try_to_create_an_account_with_existing_emailid()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1485000000,
+              "status": "passed"
+            },
+            "line": 90,
+            "name": "I post the body in the URI scenario3",
+            "match": {
+              "location": "stepDefinition.Step.i_post_the_body_in_the_URI_scenario3()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 91,
+            "name": "I should get error message scenario3",
+            "match": {
+              "location": "stepDefinition.Step.i_should_get_error_message_scenario3()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AccountCreationNegativeScenario3"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-05T13:02:41.398Z",
+        "line": 94,
+        "name": "I am creating an account in SBN application with negative scenario4",
+        "description": "",
+        "id": "i-am-creating-an-account-in-sbn-application;i-am-creating-an-account-in-sbn-application-with-negative-scenario4",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 95,
+            "name": "Im in the SBN app using the baseURI scenario4",
+            "match": {
+              "location": "stepDefinition.Step.im_in_the_SBN_app_using_the_baseURI_scenario4()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 598000000,
+              "status": "passed"
+            },
+            "line": 96,
+            "name": "I try to create an account with existing phone number",
+            "match": {
+              "location": "stepDefinition.Step.i_try_to_create_an_account_with_existing_phone_number()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1521000000,
+              "status": "passed"
+            },
+            "line": 97,
+            "name": "I post the body in the URI scenario4",
+            "match": {
+              "location": "stepDefinition.Step.i_post_the_body_in_the_URI_scenario4()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 98,
+            "name": "I should get error message scenario4",
+            "match": {
+              "location": "stepDefinition.Step.i_should_get_error_message_scenario4()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AccountCreationNegativeScenario4"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-05T13:02:43.538Z",
+        "line": 101,
+        "name": "I am logging-In using the username and wrong password",
+        "description": "",
+        "id": "i-am-creating-an-account-in-sbn-application;i-am-logging-in-using-the-username-and-wrong-password",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 102,
+            "name": "I have created an account",
+            "match": {
+              "location": "stepDefinition.Step.i_have_created_an_account1()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 128000000,
+              "status": "passed"
+            },
+            "line": 103,
+            "name": "I login with username and wrong password",
+            "match": {
+              "location": "stepDefinition.Step.i_login_with_username_and_wrong_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1692000000,
+              "status": "passed"
+            },
+            "line": 104,
+            "name": "I post login details in the URI",
+            "match": {
+              "location": "stepDefinition.Step.i_post_login_details_in_the_URI1()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 46000000,
+              "status": "passed"
+            },
+            "line": 105,
+            "name": "I should get error message as Invalid Credentials",
+            "match": {
+              "location": "stepDefinition.Step.i_should_get_error_message_as_Invalid_Credentials()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginNegative"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-05T13:02:45.412Z",
+        "line": 108,
+        "name": "I am logging-In using the invalid username and valid password scenario2",
+        "description": "",
+        "id": "i-am-creating-an-account-in-sbn-application;i-am-logging-in-using-the-invalid-username-and-valid-password-scenario2",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 109,
+            "name": "I have created an account scenario2",
+            "match": {
+              "location": "stepDefinition.Step.i_have_created_an_account_scenario2()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 90000000,
+              "status": "passed"
+            },
+            "line": 110,
+            "name": "I login with invalid username and valid password scenario2",
+            "match": {
+              "location": "stepDefinition.Step.i_login_with_invalid_username_and_valid_password_scenario2()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1724000000,
+              "status": "passed"
+            },
+            "line": 111,
+            "name": "I post login details in the URI scenario2",
+            "match": {
+              "location": "stepDefinition.Step.i_post_login_details_in_the_URI_scenario2()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 69000000,
+              "status": "passed"
+            },
+            "line": 112,
+            "name": "I should get error message as Invalid Credentials scenario2",
+            "match": {
+              "location": "stepDefinition.Step.i_should_get_error_message_as_Invalid_Credentials_scenario2()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginNegative2"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-05T13:02:47.301Z",
+        "line": 116,
+        "name": "I am logging-In using the invalid username and invalid password scenario3",
+        "description": "",
+        "id": "i-am-creating-an-account-in-sbn-application;i-am-logging-in-using-the-invalid-username-and-invalid-password-scenario3",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 117,
+            "name": "I have created an account scenario3",
+            "match": {
+              "location": "stepDefinition.Step.i_have_created_an_account_scenario3()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 100000000,
+              "status": "passed"
+            },
+            "line": 118,
+            "name": "I login with invalid username and invalid password scenario3",
+            "match": {
+              "location": "stepDefinition.Step.i_login_with_invalid_username_and_invalid_password_scenario3()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1647000000,
+              "status": "passed"
+            },
+            "line": 119,
+            "name": "I post login details in the URI scenario3",
+            "match": {
+              "location": "stepDefinition.Step.i_post_login_details_in_the_URI_scenario3()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 150000000,
+              "status": "passed"
+            },
+            "line": 120,
+            "name": "I should get error message as Invalid Credentials scenario3",
+            "match": {
+              "location": "stepDefinition.Step.i_should_get_error_message_as_Invalid_Credentials_scenario3()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginNegative3"
+          }
+        ]
+      }
+    ],
+    "name": "I am creating an account in SBN application",
+    "description": "and using the username and password I perform login to generate code \nthen using this code I generate token and UserID\nthen using this token and userID I view the profile\nthen I add a post in the account and I view the added post",
+    "id": "i-am-creating-an-account-in-sbn-application",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/featurefiles/home.feature",
+    "tags": []
+  }
+]
